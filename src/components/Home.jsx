@@ -13,9 +13,6 @@ class Home extends Component {
             <h2 className="white-text">SOFTWARE ENGINEER</h2>
           </div>
         </section>
-        <article id="intro">
-          <h1>hey</h1>
-        </article>
       </main>
     );
   }

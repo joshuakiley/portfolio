@@ -2,6 +2,7 @@
 //       COMPONENTS
 //==============================
 import React, { Component } from "react";
+import M from "materialize-css/dist/js/materialize.min.js";
 
 //==============================
 //       DEPENDENCIES
@@ -9,6 +10,13 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class MobileNav extends Component {
+  componentDidMount() {
+    document.addEventListener("DOMContentLoaded", function() {
+      var elems = document.querySelectorAll(".sidenav");
+      var instances = M.Sidenav.init(elems, {});
+    });
+  }
+
   render() {
     return (
       <ul id="slide-out" className="sidenav">
@@ -24,36 +32,16 @@ class MobileNav extends Component {
             </a>
           </div>
         </li>
-        <li>
-          <Link className="waves-effect" to="/">
-            <i className="material-icons">home</i>
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link className="waves-effect" to="/">
-            <i className="material-icons">work</i>
-            Projects
-          </Link>
-        </li>
-        <li>
-          <Link className="waves-effect" to="/">
-            <i className="material-icons">toys</i>
-            Hobbies
-          </Link>
-        </li>
-        <li>
-          <Link className="waves-effect" to="/">
-            <i className="material-icons">chat</i>
-            Contact
-          </Link>
-        </li>
-        <li>
-          <Link className="waves-effect" to="/">
-            <i className="material-icons">cake</i>
-            Resume
-          </Link>
-        </li>
+        {this.props.linkUrl.map((value, index) => {
+          return (
+            <li>
+              <Link className="waves-effect" to={value}>
+                <i className="material-icons">{this.props.linkIcon[index]}</i>
+                {this.props.linkName[index]}
+              </Link>
+            </li>
+          );
+        })}
       </ul>
     );
   }

@@ -33,6 +33,7 @@ class App extends React.Component {
     this.state = {
       linkUrl: ["/", "/projects", "/hobbies", "/contact", "/resume"],
       linkName: ["Home", "Projects", "Hobbies", "Contact", "Resume"],
+      linkIcon: ["home", "work", "toys", "chat", "cake"],
       routeComponent: [Home, Projects, Hobbies, Contact, Resume]
     };
   }
@@ -44,10 +45,12 @@ class App extends React.Component {
           <DesktopNav
             linkUrl={this.state.linkUrl}
             linkName={this.state.linkName}
+            linkIcon={this.state.linkIcon}
           />
           <MobileNav
             linkUrl={this.state.linkUrl}
             linkName={this.state.linkName}
+            linkIcon={this.state.linkIcon}
           />
         </header>
 
