@@ -71,7 +71,7 @@ class DesktopNav extends Component {
   render() {
     return (
       <nav>
-        <div className="nav-wrapper black">
+        <div className="nav-wrapper">
           <div
             data-target="slide-out"
             className="sidenav-trigger hide-on-large-only"
