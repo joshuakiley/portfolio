@@ -7,7 +7,11 @@ class Resume extends Component {
   render() {
     return (
       <main>
-        <h1 className="center">Resume</h1>
+        <section className="hero">
+          <div className="hero-inner">
+            <h1>RESUME</h1>
+          </div>
+        </section>
       </main>
     );
   }

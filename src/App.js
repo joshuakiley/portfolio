@@ -53,7 +53,6 @@ class App extends React.Component {
             linkIcon={this.state.linkIcon}
           />
         </header>
-
         {/* MAIN */}
         {this.state.routeComponent.map((value, index) => {
           return (

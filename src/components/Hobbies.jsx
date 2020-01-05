@@ -7,7 +7,11 @@ class Hobbies extends Component {
   render() {
     return (
       <main>
-        <h1 className="center">Hobbies</h1>
+        <section className="hero">
+          <div className="hero-inner">
+            <h1>HOBBIES</h1>
+          </div>
+        </section>
       </main>
     );
   }
