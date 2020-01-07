@@ -122,3 +122,10 @@ nav {
   background-size: cover;
   position: relative;
 }
+
+/* PROJECT FORMATTING */
+
+.project-image {
+  margin: 5px;
+  padding: 5px;
+}
