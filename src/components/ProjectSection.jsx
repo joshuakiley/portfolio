@@ -6,29 +6,30 @@ import React, { Component } from "react";
 class ProjectSection extends Component {
   render() {
     return (
-      <section id={this.props.info.id} className="hero">
-        <div className="hero-inner">
-          <h1>{this.props.info.title}</h1>
-          <h2>{this.props.info.subtitle}</h2>
-          <a href={this.props.info.liveSite} className="btn waves-effect">
-            Live Site
-          </a>
-          <a href={this.props.info.github} className="btn waves-effect">
-            Github
-          </a>
-          <p>{this.props.info.description}</p>
-          <div className="image-gallery">
-            <img className="project-image" src="/images/avatar-work.jpg"></img>
-            <img className="project-image" src="/images/avatar-work.jpg"></img>
-            <img className="project-image" src="/images/avatar-work.jpg"></img>
+      <section className="project-section" id={this.props.info.id}>
+        <div className="project-main">
+          <h1 className="project-title">{this.props.info.title}</h1>
+          <h2 className="project-subtitle">{this.props.info.subtitle}</h2>
+          <div className="project-links">
+            <a
+              className="btn blue darken-1 white-text waves-effect"
+              href={this.props.info.liveSite}
+            >
+              Live Site
+            </a>
+            <a
+              className="btn blue darken-1 white-text waves-effect"
+              href={this.props.info.github}
+            >
+              Github
+            </a>
           </div>
-          <a
-            href="#projects"
-            className="btn green darken-4 waves-light waves-effect"
-          >
+          <p className="project-description">{this.props.info.description}</p>
+          <a href="#projects" className="btn black white-text waves-effect">
             top
           </a>
         </div>
+        <hr></hr>
       </section>
     );
   }

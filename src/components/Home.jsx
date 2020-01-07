@@ -14,8 +14,8 @@ class Home extends Component {
             <h2>SOFTWARE ENGINEER</h2>
           </div>
         </section>
-        <section className="hero">
-          <div className="hero-inner">
+        <section>
+          <div>
             <h1>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem et
               nihil sapiente! Veritatis perspiciatis voluptatibus rerum saepe
