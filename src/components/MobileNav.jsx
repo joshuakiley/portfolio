@@ -21,7 +21,7 @@ class MobileNav extends Component {
     return (
       <ul id="slide-out" className="sidenav">
         <li className="first-li">
-          <img className="dirk" src="/images/dirk.png"></img>
+          <img className="dirk" src="/images/avatar.jpg"></img>
           <div className="user-view">
             <div className="logo"></div>
             <a href="#">

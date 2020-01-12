@@ -2,16 +2,19 @@
 //       COMPONENTS
 //==============================
 import React, { Component } from "react";
+import Hero from "./Hero.jsx";
 
 class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      title: "Contact"
+    };
+  }
   render() {
     return (
       <main>
-        <section className="hero">
-          <div className="hero-inner">
-            <h1>CONTACT</h1>
-          </div>
-        </section>
+        <Hero title={this.state.title} />
       </main>
     );
   }

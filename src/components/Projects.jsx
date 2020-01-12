@@ -3,13 +3,17 @@
 //==============================
 import React, { Component } from "react";
 import ProjectSection from "./ProjectSection.jsx";
+import Hero from "./Hero.jsx";
 
 class Projects extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      title: "Projects",
+      links: ["#hskflashcard", "#budge", "#getaway"],
       hsk: {
         id: "hskflashcard",
+        thumbnail: "/images/hsk.png",
         title: "HSK Flashcards",
         subtitle: "A Simple App For Studying Chinese Vocabulary",
         liveSite: "https://joshuakiley.github.io/",
@@ -19,6 +23,7 @@ class Projects extends Component {
       },
       budge: {
         id: "budge",
+        thumbnail: "/images/budge.png",
         title: "Budge: A Budgeting App",
         subtitle: "Day to Day Budgeting.",
         liveSite: "https://budgemanager.herokuapp.com/",
@@ -28,6 +33,7 @@ class Projects extends Component {
       },
       getaway: {
         id: "getaway",
+        thumbnail: "/images/getaway.png",
         title: "Getaway",
         subtitle:
           "A trip planner for people who have an idea for a trip but aren't sure when they may want to go.",
@@ -41,31 +47,7 @@ class Projects extends Component {
   render() {
     return (
       <main>
-        <section id="projects" className="hero">
-          <div className="hero-inner">
-            <h1>PROJECTS</h1>
-            <div className="links">
-              <a
-                href="#hskflashcard"
-                className="link-button btn white black-text waves-effect"
-              >
-                flashcards
-              </a>
-              <a
-                href="#budge"
-                className="link-button btn white black-text waves-effect"
-              >
-                budge
-              </a>
-              <a
-                href="#getaway"
-                className="link-button btn white black-text waves-effect"
-              >
-                getaway
-              </a>
-            </div>
-          </div>
-        </section>
+        <Hero title={this.state.title} links={this.state.links} />
         <ProjectSection info={this.state.hsk} />
         <ProjectSection info={this.state.budge} />
         <ProjectSection info={this.state.getaway} />
