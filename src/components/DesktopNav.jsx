@@ -105,6 +105,24 @@ class DesktopNav extends Component {
                 </li>
               );
             })}
+            <li className="waves-effect waves-light nav-button">
+              <a
+                onMouseEnter={() => {
+                  this.handleHover("Resume");
+                }}
+                onMouseLeave={() => {
+                  this.handleHover("Resume");
+                }}
+                href="https://resume.creddle.io/resume/jdkgfnt8ko0"
+                className
+              >
+                {this.state.isHovered["Resume"] ? (
+                  <i className="material-icons">cake</i>
+                ) : (
+                  "Resume"
+                )}
+              </a>
+            </li>
           </ul>
         </div>
       </nav>

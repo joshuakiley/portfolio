@@ -12,7 +12,6 @@ import Home from "./components/Home.jsx";
 import Projects from "./components/Projects.jsx";
 import Hobbies from "./components/Hobbies.jsx";
 import Contact from "./components/Contact.jsx";
-import Resume from "./components/Resume.jsx";
 
 // FOOTER
 import Footer from "./components/Footer.jsx";
@@ -31,10 +30,10 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      linkUrl: ["/", "/projects", "/hobbies", "/contact", "/resume"],
-      linkName: ["Home", "Projects", "Hobbies", "Contact", "Resume"],
-      linkIcon: ["home", "work", "toys", "chat", "cake"],
-      routeComponent: [Home, Projects, Hobbies, Contact, Resume]
+      linkUrl: ["/", "/projects", "/hobbies", "/contact"],
+      linkName: ["Home", "Projects", "Hobbies", "Contact"],
+      linkIcon: ["home", "work", "toys", "chat"],
+      routeComponent: [Home, Projects, Hobbies, Contact]
     };
   }
   render() {
