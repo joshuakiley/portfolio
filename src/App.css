@@ -30,7 +30,7 @@ nav > div > ul > li > a {
 
 /* PAGE DIVS */
 .page-title {
-  padding-top: 60px;
+  padding-top: 30px;
   text-align: center;
 }
 
@@ -43,11 +43,28 @@ nav > div > ul > li > a {
 }
 
 /* PORTFOLIO PAGE */
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.project {
+  margin: auto;
+  text-align: center;
+}
+
+.project-image {
+  margin: 5px;
+  width: 250px;
+}
 
 /* BUTTON */
 .custom-btn {
   background-color: rgb(255, 132, 115) !important;
   border-radius: 30px !important;
+  margin: 5px;
 }
 
 /* NAVIGATION */

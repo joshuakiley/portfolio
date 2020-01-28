@@ -10,7 +10,7 @@ import MobileNav from "./components/MobileNav.jsx";
 // PAGES
 import Home from "./components/Home.jsx";
 import Portfolio from "./components/Portfolio.jsx";
-import Hobbies from "./components/Hobbies.jsx";
+import Blog from "./components/Blog.jsx";
 import Contact from "./components/Contact.jsx";
 
 // FOOTER
@@ -30,10 +30,10 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      linkUrl: ["/", "/portfolio", "/hobbies", "/contact"],
-      linkName: ["Home", "Portfolio", "Hobbies", "Contact"],
+      linkUrl: ["/", "/portfolio", "/blog", "/contact"],
+      linkName: ["Home", "Portfolio", "Blog", "Contact"],
       linkIcon: ["home", "work", "toys", "chat"],
-      routeComponent: [Home, Portfolio, Hobbies, Contact]
+      routeComponent: [Home, Portfolio, Blog, Contact]
     };
   }
   render() {

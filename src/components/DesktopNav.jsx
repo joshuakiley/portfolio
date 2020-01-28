@@ -14,8 +14,8 @@ class DesktopNav extends Component {
     this.state = {
       isHovered: {
         Home: false,
-        Projects: false,
-        Hobbies: false,
+        Portfolio: false,
+        Blog: false,
         Contact: false,
         Resume: false
       }
@@ -33,19 +33,19 @@ class DesktopNav extends Component {
           }
         }));
         break;
-      case "Projects":
+      case "Portfolio":
         this.setState(prevState => ({
           isHovered: {
             ...prevState.isHovered,
-            Projects: !prevState.isHovered["Projects"]
+            Portfolio: !prevState.isHovered["Portfolio"]
           }
         }));
         break;
-      case "Hobbies":
+      case "Blog":
         this.setState(prevState => ({
           isHovered: {
             ...prevState.isHovered,
-            Hobbies: !prevState.isHovered["Hobbies"]
+            Blog: !prevState.isHovered["Blog"]
           }
         }));
         break;

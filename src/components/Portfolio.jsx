@@ -3,6 +3,7 @@
 //==============================
 import React, { Component } from "react";
 import Button from "./Button";
+import ProjecItmage from "./ProjectImage";
 
 class Portfolio extends Component {
   constructor(props) {
@@ -14,7 +15,7 @@ class Portfolio extends Component {
       hsk: {
         id: "hskflashcard",
         thumbnail: "/images/hsk.png",
-        title: "HSK Flashcards",
+        title: "HSK",
         subtitle: "The HSK is the official Chinese language exam in China.",
         liveSite: "https://joshuakiley.github.io/",
         github: "https://github.com/joshuakiley/joshuakiley.github.io",
@@ -42,7 +43,7 @@ class Portfolio extends Component {
       budge: {
         id: "budge",
         thumbnail: "/images/budge.png",
-        title: "Budge: A Budgeting App",
+        title: "Budge",
         subtitle: "Day to Day Budgeting.",
         liveSite: "https://budgemanager.herokuapp.com/",
         github: "https://github.com/joshuakiley/budge",
@@ -107,13 +108,28 @@ class Portfolio extends Component {
         </div>
         <div className="project-list">
           <div className="project">
-            <Button name={this.state.hsk.title} />
+            <h3>HSK Flashcards</h3>
+            <div>
+              <ProjecItmage src={this.state.hsk.thumbnail} />
+            </div>
+            <Button name="Live Site" url={this.state.hsk.liveSite} />
+            <Button name="GitHub" url={this.state.hsk.github} />
           </div>
           <div className="project">
-            <Button name={this.state.budge.title} />
+            <h3>Budge</h3>
+            <div>
+              <ProjecItmage src={this.state.budge.thumbnail} />
+            </div>
+            <Button name="Live Site" url={this.state.budge.liveSite} />
+            <Button name="GitHub" url={this.state.budge.github} />
           </div>
           <div className="project">
-            <Button name={this.state.getaway.title} />
+            <h3>Getaway</h3>
+            <div>
+              <ProjecItmage src={this.state.getaway.thumbnail} />
+            </div>
+            <Button name="Live Site" url={this.state.getaway.liveSite} />
+            <Button name="GitHub" url={this.state.getaway.github} />
           </div>
         </div>
       </div>
