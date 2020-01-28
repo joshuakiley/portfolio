@@ -2,7 +2,6 @@
 //       COMPONENTS
 //==============================
 import React, { Component } from "react";
-import Hero from "./Hero.jsx";
 
 class Contact extends Component {
   constructor(props) {
@@ -15,7 +14,7 @@ class Contact extends Component {
   render() {
     return (
       <main>
-        <Hero title={this.state.title} links={this.state.links} />
+        <p>contact</p>
       </main>
     );
   }

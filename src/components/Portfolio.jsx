@@ -2,10 +2,9 @@
 //       COMPONENTS
 //==============================
 import React, { Component } from "react";
-import ProjectSection from "./ProjectSection.jsx";
-import Hero from "./Hero.jsx";
+import Button from "./Button";
 
-class Projects extends Component {
+class Portfolio extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -101,18 +100,25 @@ class Projects extends Component {
   }
   render() {
     return (
-      <main>
-        <Hero
-          title={this.state.title}
-          links={this.state.links}
-          linkTitles={this.state.linkTitles}
-        />
-        <ProjectSection info={this.state.hsk} />
-        <ProjectSection info={this.state.budge} />
-        <ProjectSection info={this.state.getaway} />
-      </main>
+      <div className="page-portfolio">
+        <div className="page-title">
+          <h1>Portfolio</h1>
+          <p>These are some of the websites that I've created and deployed.</p>
+        </div>
+        <div className="project-list">
+          <div className="project">
+            <Button name={this.state.hsk.title} />
+          </div>
+          <div className="project">
+            <Button name={this.state.budge.title} />
+          </div>
+          <div className="project">
+            <Button name={this.state.getaway.title} />
+          </div>
+        </div>
+      </div>
     );
   }
 }
 
-export default Projects;
+export default Portfolio;

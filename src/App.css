@@ -1,74 +1,54 @@
-/* 
-      COMPONENTS
-*/
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans&display=swap");
 
-img {
-  height: 200px;
+* {
+  font-family: "Noto Sans", sans-serif;
 }
 
-.contact {
-  text-align: center;
+body {
+  background-color: rgb(0, 102, 101);
 }
 
-hr {
-  margin: 20px 0 20px 0;
-  border-radius: 5px;
+main {
+  display: flex;
+  color: white;
 }
 
 nav {
-  position: absolute;
-  top: 0;
-  background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.3) !important;
   width: 100%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* HOME PAGE */
-.home-intro {
-  margin: auto;
+nav > div > ul > li > a {
+  font-size: 18px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+/* ============================== 
+            CLASSES
+============================== */
+
+/* PAGE DIVS */
+.page-title {
+  padding-top: 60px;
   text-align: center;
-  width: 90vw;
 }
 
-.home-intro h1 {
-  font-size: 4em;
+/* HOME ELEMENTS */
+
+.home-avatar {
+  width: 300px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-.home-intro h2 {
-  font-size: 2.5em;
-}
+/* PORTFOLIO PAGE */
 
-.home-intro h3 {
-  font-size: 2.2em;
+/* BUTTON */
+.custom-btn {
+  background-color: rgb(255, 132, 115) !important;
+  border-radius: 30px !important;
 }
-
-.paragraphs {
-  margin: auto;
-  width: 80%;
-}
-
-.home-intro p {
-  text-align: left;
-  font-size: 1.5em;
-}
-
-/* 
-      SPECIAL COMPONENTS
-*/
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: black;
-}
-
-::-webkit-scrollbar-thumb {
-  background: white;
-}
-
-/* 
-      CLASSES
-*/
 
 /* NAVIGATION */
 .nav-wrapper > ul {
@@ -89,88 +69,7 @@ nav {
   text-align: center;
 }
 
-/* PERSONAL AVATAR */
-.avatar {
-  margin-top: 30px;
-  height: 200px;
-  border-radius: 50%;
-}
-
-/* MOBILE NAV CARTOON AVATAR */
-.dirk {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* MOBILE NAV UNDER CARTOON AVATAR */
-.first-li {
-  background-color: black;
-}
-
-/* HOME PAGE */
-
-.hero {
-  background-image: url("/images/iStock-521205302.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
-  height: 100vh;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-}
-
-.hero-inner {
-  width: 750%;
-  padding: 5px;
-  position: relative;
-}
-
-.hero h1 {
-  font-size: 75px;
-}
-
-.hero h2 {
-  font-size: 2.5em;
-}
-
-/* SHOW OR hIDE LINKS IN HERO */
-
-.hidden {
-  display: none;
-}
-
-.show {
-  display: flex;
-  position: absolute;
-  bottom: 5px;
-}
-
-.show a {
-  margin: 0 20px 0 20px;
-}
-
-.name {
-  font-size: 18px !important;
-  padding-bottom: 10px;
-}
-
-.user-view {
-  margin-top: -30px;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-/* HEADER LINKS */
+/* NAV LINKS */
 
 .links {
   display: flex;
@@ -180,88 +79,4 @@ nav {
 
 .link-button {
   width: 120px;
-}
-
-/* PROJECT FORMATTING */
-.project {
-  display: flex;
-  flex-wrap: row wrap;
-  justify-content: stretch;
-  width: 100%;
-  min-height: 100vh;
-  border-bottom: 1px solid black;
-
-  text-align: center;
-}
-
-.project-figure {
-  min-width: 400px;
-  margin: 0;
-  flex-grow: 1;
-}
-
-.project-figure-image {
-  width: 100%;
-  height: auto;
-}
-
-.project-text {
-  display: block;
-  width: 90%;
-}
-
-.project-article {
-  padding-left: 10px;
-  padding-right: 10px;
-  flex-grow: 2;
-  height: 50%;
-}
-
-.project-article-title {
-  font-size: 36px;
-  width: 100%;
-}
-
-.project-article-subtitle {
-  font-size: 20px;
-}
-
-.project-article-description {
-  text-align: left;
-  font-size: 16px;
-}
-
-.project-aside {
-  display: flex;
-  flex-wrap: stretch;
-  width: 100%;
-  height: 50%;
-  flex-grow: 1;
-}
-
-.project-aside-category {
-  display: block;
-  padding: 10px;
-  width: 50%;
-}
-
-.project-aside-category ul,
-.project-aside-category p {
-  text-align: left;
-  font-size: 16px;
-}
-
-.project-aside-category h3 {
-  font-size: 24px;
-}
-
-.project-figure figcaption a {
-  margin: 20px 20px 20px 20px;
-  width: 100px;
-}
-
-@media (max-width: 1000px) {
-  .project {
-    display: block;
-  }
 }

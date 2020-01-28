@@ -2,8 +2,6 @@
 //       COMPONENTS
 //==============================
 import React, { Component } from "react";
-import Hero from "./Hero.jsx";
-import HomeSection from "./HomeSection.jsx";
 
 class Home extends Component {
   constructor(props) {
@@ -15,10 +13,15 @@ class Home extends Component {
   }
   render() {
     return (
-      <main>
-        <Hero title={this.state.title} links={this.state.links} />
-        <HomeSection />
-      </main>
+      <div className="page-title">
+        <img className="home-avatar" src="images/avatar.jpg"></img>
+        <h1>Joshua Kiley</h1>
+        <h2>Full Stack Developer</h2>
+        <p>
+          Whether it's a foreign language, an RPG, or a puzzle; finding the path
+          is all the fun.
+        </p>
+      </div>
     );
   }
 }

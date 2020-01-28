@@ -20,18 +20,6 @@ class MobileNav extends Component {
   render() {
     return (
       <ul id="slide-out" className="sidenav">
-        <li className="first-li">
-          <img className="dirk" src="/images/avatar.jpg"></img>
-          <div className="user-view">
-            <div className="logo"></div>
-            <a href="#">
-              <span className="white-text name center">Joshua Kiley</span>
-            </a>
-            <a href="#">
-              <span className="white-text name center">SOFTWARE ENGINEER</span>
-            </a>
-          </div>
-        </li>
         {this.props.linkUrl.map((value, index) => {
           return (
             <li>
@@ -42,6 +30,12 @@ class MobileNav extends Component {
             </li>
           );
         })}
+        <li>
+          <a href="https://resume.creddle.io/resume/jdkgfnt8ko0">
+            <i className="material-icons">cake</i>
+            Resume
+          </a>
+        </li>
       </ul>
     );
   }
