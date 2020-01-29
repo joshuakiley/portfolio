@@ -14,7 +14,7 @@ class Contact extends Component {
   }
   render() {
     return (
-      <div className="page-contact">
+      <div className="page-container">
         <div className="page-title">
           <h1>Come Say Hey</h1>
           <p>Add me on LinkedIn or GitHub if you've got any project ideas.</p>

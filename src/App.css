@@ -17,7 +17,6 @@ main {
 nav {
   background: rgba(0, 0, 0, 0.3) !important;
   width: 100%;
-  box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 nav > div > ul > li > a {
@@ -30,6 +29,11 @@ nav > div > ul > li > a {
 ============================== */
 
 /* PAGE DIVS */
+.page-container {
+  margin: auto;
+  width: 100%;
+}
+
 .page-title {
   padding-top: 30px;
   text-align: center;

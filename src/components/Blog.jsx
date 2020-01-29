@@ -13,7 +13,7 @@ class Blog extends Component {
   }
   render() {
     return (
-      <div className="page-blog">
+      <div className="page-container">
         <div className="page-title">
           <h1>Let's Talk About That</h1>
           <p>
